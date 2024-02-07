@@ -1,4 +1,4 @@
-package com.navid.onlinestoreserver.web;
+package com.navid.onlinestoreserver.web.controller;
 
 
 import com.navid.onlinestoreserver.domain.model.Customer;
