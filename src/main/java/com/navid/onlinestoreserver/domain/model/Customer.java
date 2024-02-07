@@ -5,8 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.SourceType;
-import org.hibernate.annotations.Type;
-import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
+import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 @Getter
@@ -26,8 +25,9 @@ public class Customer {
     private String zip;
     private String phone;
     private String country;
-    @CreationTimestamp(source = SourceType.DB)
+    @CreationTimestamp(source = SourceType.VM)
     @Column(columnDefinition = "varchar")
     private String createdAt;
+    @UpdateTimestamp(source = SourceType.VM)
     private String updatedAt;
 }
