@@ -1,10 +1,12 @@
 package com.navid.onlinestoreserver.web.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CustomerDto {
 
     private Long id;
