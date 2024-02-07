@@ -1,7 +1,7 @@
 package com.navid.onlinestoreserver.web.controller;
 
 
-import com.navid.onlinestoreserver.domain.model.Customer;
+import com.navid.onlinestoreserver.web.model.CustomerDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,22 +11,22 @@ import java.util.List;
 public class CustomerController {
 
     @GetMapping
-    public List<Customer> getAllCustomer(){
+    public List<CustomerDto> getAllCustomer(){
         return null;
     }
 
     @GetMapping("/{id}")
-    public Customer getCustomerById(@PathVariable Long id){
+    public CustomerDto getCustomerById(@PathVariable Long id){
         return null;
     }
 
     @PostMapping
-    public Customer createCustomer(@RequestBody Customer customer){
+    public CustomerDto createCustomer(@RequestBody CustomerDto customerDto){
         return null;
     }
 
     @PutMapping
-    public Customer updateCustomer(@RequestBody Customer customer){
+    public CustomerDto updateCustomer(@RequestBody CustomerDto customerDto){
         return null;
     }
 
