@@ -5,13 +5,14 @@ import com.navid.onlinestoreserver.domain.service.CustomerService;
 import com.navid.onlinestoreserver.web.model.CustomerDto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.PositiveOrZero;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/customers")
-@Valid
+@Validated
 public class CustomerController {
 
     private final CustomerService customerService;
